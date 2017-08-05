@@ -102,4 +102,7 @@ brew cask ls
 echo "brew cleanup..."
 brew cleanup -s
 
+echo "brew cask cleanup"
+brew cask cleanup
+
 exit
