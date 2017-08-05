@@ -6,12 +6,16 @@ which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubu
 masInstallList=(
   497799835
   443987910
+  539883307
+  405399194
+  414855915
 )
 
 brewInstallList=(
   git
   mas
   openssl
+  heroku
 )
 
 brewCaskInstallList=(
@@ -29,6 +33,10 @@ brewCaskInstallList=(
   atom
   inkscape
   gimp
+  visual-studio-code
+  imageoptim
+  diffmerge
+  duet
 )
 
 function masInstall() {
