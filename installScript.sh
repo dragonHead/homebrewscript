@@ -16,6 +16,8 @@ brewInstallList=(
   mas
   openssl
   heroku
+  jpegoptim
+  optipng
 )
 
 brewCaskInstallList=(
@@ -37,6 +39,10 @@ brewCaskInstallList=(
   imageoptim
   diffmerge
   duet
+  sequel-pro
+  slack
+  skype
+  kindle
 )
 
 function masInstall() {
