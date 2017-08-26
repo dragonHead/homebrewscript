@@ -72,8 +72,8 @@ function brewCaskInstall() {
   fi
 }
 
-echo "brew doctor..."
-if brew doctor > /dev/null; then
+#echo "brew doctor..."
+#if brew doctor > /dev/null; then
   echo "ok!"
 
   for masInstallItem in "${masInstallList[@]}"; do
@@ -88,7 +88,7 @@ if brew doctor > /dev/null; then
     brewCaskInstall $brewCaskInstallItem
   done
 
-fi
+#fi
 
 echo "update mas..."
 mas upgrade
