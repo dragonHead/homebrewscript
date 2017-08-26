@@ -3,5 +3,7 @@ matrix:
   include:
     - os: osx
       osx_image: xcode8.3
+before_install:
+  - brew update
 script:
   - bash installScript.sh
