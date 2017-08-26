@@ -1,2 +1,7 @@
-os: osx
-osx_image: xcode8.3
+language: ruby
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode8.3
+install:
+  - brew update
