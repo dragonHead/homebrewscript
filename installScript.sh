@@ -4,10 +4,8 @@ echo "Installing brew..."
 which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 masInstallList=(
-  497799835
   443987910
-  539883307
-  405399194
+  497799835
   414855915
 )
 
@@ -15,9 +13,12 @@ brewInstallList=(
   git
   mas
   openssl
-  heroku
   jpegoptim
   optipng
+  guetzli
+  jpeg
+  node
+  libpng
 )
 
 brewCaskInstallList=(
@@ -27,22 +28,20 @@ brewCaskInstallList=(
   appcleaner
   microsoft-office
   docker
-  iterm2
   android-studio
   google-chrome
   firefox
   opera
   atom
-  inkscape
   gimp
   visual-studio-code
+  visual-studio
   imageoptim
   diffmerge
   duet
   sequel-pro
-  slack
-  skype
-  kindle
+  virtualbox
+  eclipse-jee
 )
 
 function masInstall() {
