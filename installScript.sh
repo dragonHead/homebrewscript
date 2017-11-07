@@ -5,20 +5,23 @@ which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubu
 
 masInstallList=(
   443987910
+  413215883
   497799835
-  414855915
+  441258766
 )
 
 brewInstallList=(
   git
-  mas
-  openssl
-  jpegoptim
-  optipng
   guetzli
   jpeg
-  node
   libpng
+  node
+  optipng
+  icu4c
+  jpegoptim
+  mas
+  openssl
+  p7zip
 )
 
 brewCaskInstallList=(
@@ -30,18 +33,14 @@ brewCaskInstallList=(
   docker
   android-studio
   google-chrome
-  firefox
-  opera
   atom
   gimp
-  visual-studio-code
-  visual-studio
   imageoptim
   diffmerge
   duet
   sequel-pro
   virtualbox
-  eclipse-jee
+  vagrant
 )
 
 function masInstall() {
