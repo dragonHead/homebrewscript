@@ -26,7 +26,6 @@ brewCaskInstallList=(
   appcleaner
   docker
   google-chrome
-  gimp
   duet
   caffeine
   xquartz
