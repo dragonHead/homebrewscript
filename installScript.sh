@@ -20,7 +20,6 @@ brewInstallList=(
 )
 
 brewCaskInstallList=(
-  atom
   google-japanese-ime
   caffeine
   appcleaner
