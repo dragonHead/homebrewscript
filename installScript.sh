@@ -62,12 +62,12 @@ function brewCaskInstall() {
 #if brew doctor > /dev/null; then
   echo "ok!"
 
-  for masInstallItem in "${masInstallList[@]}"; do
-    masInstall $masInstallItem
-  done
-
   for brewInstallItem in "${brewInstallList[@]}"; do
     brewInstall $brewInstallItem
+  done
+
+  for masInstallItem in "${masInstallList[@]}"; do
+    masInstall $masInstallItem
   done
 
   for brewCaskInstallItem in "${brewCaskInstallList[@]}"; do
