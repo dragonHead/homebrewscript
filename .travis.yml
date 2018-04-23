@@ -6,4 +6,4 @@ matrix:
 before_install:
   - brew update
 script:
-  - bash installScript.sh
+  - bash brewInstall.sh
