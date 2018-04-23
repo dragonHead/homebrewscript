@@ -3,14 +3,6 @@
 echo "Installing brew..."
 which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-masInstallList=(
-  1013592989
-  443987910
-  413215883
-  497799835
-  441258766
-)
-
 brewInstallList=(
   git
   mas
@@ -20,14 +12,21 @@ brewInstallList=(
 )
 
 brewCaskInstallList=(
-  google-japanese-ime
-  caffeine
   appcleaner
+  atom
+  caffeine
   docker
   google-chrome
-  duet
-  caffeine
+  google-japanese-ime
+  kindle
   xquartz
+)
+
+masInstallList=(
+  1013592989
+  443987910
+  497799835
+  441258766
 )
 
 function masInstall() {
@@ -65,12 +64,12 @@ function brewCaskInstall() {
     brewInstall $brewInstallItem
   done
 
-  for masInstallItem in "${masInstallList[@]}"; do
-    masInstall $masInstallItem
-  done
-
   for brewCaskInstallItem in "${brewCaskInstallList[@]}"; do
     brewCaskInstall $brewCaskInstallItem
+  done
+
+  for masInstallItem in "${masInstallList[@]}"; do
+    masInstall $masInstallItem
   done
 
 #fi
