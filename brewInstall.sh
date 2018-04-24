@@ -62,23 +62,23 @@ function brewCaskInstall() {
 }
 
 echo "Installing brew..."
-#which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "brew doctor..."
 if brew doctor > /dev/null; then
   echo "ok!"
 
-#  for brewInstallItem in "${brewInstallList[@]}"; do
-#    brewInstall $brewInstallItem
-#  done
+  for brewInstallItem in "${brewInstallList[@]}"; do
+    brewInstall $brewInstallItem
+  done
 
-#  for brewCaskInstallItem in "${brewCaskInstallList[@]}"; do
-#    brewCaskInstall $brewCaskInstallItem
-#  done
+  for brewCaskInstallItem in "${brewCaskInstallList[@]}"; do
+    brewCaskInstall $brewCaskInstallItem
+  done
 
-#  for masInstallItem in "${masInstallList[@]}"; do
-#    masInstall $masInstallItem
-#  done
+  for masInstallItem in "${masInstallList[@]}"; do
+    masInstall $masInstallItem
+  done
 
 fi
 
