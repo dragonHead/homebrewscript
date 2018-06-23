@@ -12,17 +12,20 @@ brewInstallList=(
   openssl
   socat
   docker
+  node
 )
 
 brewCaskInstallList=(
+  android-studio
   appcleaner
   atom
   caffeine
+  eclipse-jee
   docker
   google-chrome
   google-japanese-ime
-  kindle
   xquartz
+  virtualbox
 )
 
 masInstallList=(
@@ -30,6 +33,7 @@ masInstallList=(
   443987910
   497799835
   441258766
+  539883307
 )
 
 function masInstall() {
