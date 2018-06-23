@@ -26,6 +26,7 @@ brewCaskInstallList=(
   google-japanese-ime
   xquartz
   virtualbox
+  vagrant
 )
 
 masInstallList=(
