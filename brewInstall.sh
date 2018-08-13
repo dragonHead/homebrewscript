@@ -22,8 +22,12 @@ brewCaskInstallList=(
   caffeine
   eclipse-jee
   docker
+  firefox
+  gimp
   google-chrome
   google-japanese-ime
+  opera
+  slack
   xquartz
   virtualbox
   vagrant
@@ -35,6 +39,8 @@ masInstallList=(
   497799835
   441258766
   539883307
+  425424353
+  405399194
 )
 
 function masInstall() {
