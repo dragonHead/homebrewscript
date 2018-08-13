@@ -31,6 +31,7 @@ brewCaskInstallList=(
   xquartz
   virtualbox
   vagrant
+  microsoft-office
 )
 
 masInstallList=(
