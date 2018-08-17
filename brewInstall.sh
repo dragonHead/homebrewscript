@@ -32,6 +32,7 @@ brewCaskInstallList=(
   virtualbox
   vagrant
   microsoft-office
+  thunderbird
 )
 
 masInstallList=(
