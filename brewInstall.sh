@@ -17,6 +17,7 @@ which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubu
 
 echo "brew doctor..."
 if brew doctor > /dev/null; then
+  #application install
   brew bundle
 fi
 
