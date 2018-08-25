@@ -1,6 +1,10 @@
 #!/bin/bash
 
+#github
 #https://github.com/Homebrew
+
+#memo
+#Install Xcode and Command Line Tools for Xcode before installing
 
 HOME_DIR=$(cd $(dirname $0) && pwd)
 FILE_NAME=$(basename $0 .sh)
@@ -38,9 +42,6 @@ brew cask ls
 
 echo "brew cleanup..."
 brew cleanup -s
-
-echo "brew cask cleanup..."
-brew cask cleanup
 
 #echo "create Brewfile"
 #brew bundle dump
