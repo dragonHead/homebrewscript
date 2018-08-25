@@ -41,7 +41,7 @@ brew cleanup -s
 echo "brew cask cleanup..."
 brew cask cleanup
 
-echo "create Brewfile"
-brew bundle dump
+#echo "create Brewfile"
+#brew bundle dump
 
 exit
