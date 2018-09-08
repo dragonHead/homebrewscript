@@ -5,6 +5,7 @@ FILE_NAME=$(basename $0 .sh)
 
 LOG_DIR=${HOME_DIR}/log
 LOG_FILE=${LOG_DIR}/${FILE_NAME}_`date +%Y%m%d%H%M%S`.log
+exec > >(tee ${LOG_FILE}) 2>&1
 
 echo "update mas..."
 mas upgrade
@@ -23,3 +24,7 @@ brew cask ls
 
 echo "brew cleanup..."
 brew cleanup -s
+
+osascript -e 'display notification "completed!" with title "brew upgrade "'
+
+exit
