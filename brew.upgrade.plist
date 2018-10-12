@@ -4,13 +4,18 @@
   <dict>
     <key>Label</key>
     <string>brew.upgrade</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PATH</key>
+      <string>/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:</string>
+    </dict>
     <!--フルパスで指定-->
     <key>ProgramArguments</key>
     <array>
       <string>/bin/bash</string>
       <string>brewUpgrade.sh</string>
     </array>
-    <key>StartInterval</key>
+    <key>StartCalendarInterval</key>
     <dict>
       <key>Hour</key>
       <integer>22</integer>

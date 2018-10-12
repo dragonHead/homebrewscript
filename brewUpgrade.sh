@@ -7,13 +7,17 @@ LOG_DIR=${HOME_DIR}/log
 LOG_FILE=${LOG_DIR}/${FILE_NAME}_`date +%Y%m%d%H%M%S`.log
 exec > >(tee ${LOG_FILE}) 2>&1
 
+echo "start update."
 echo "update mas..."
 mas upgrade
+
+echo "brew doctor..."
+brew doctor
 
 echo "update brew..."
 brew upgrade
 
-echo "installed mas list"
+echo "installed mas list..."
 mas list
 
 echo "installed brew list..."
@@ -27,4 +31,5 @@ brew cleanup -s
 
 osascript -e 'display notification "completed!" with title "brew upgrade "'
 
+echo "update end."
 exit
