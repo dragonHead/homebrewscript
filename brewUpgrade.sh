@@ -29,6 +29,9 @@ brew cask ls
 echo "brew cleanup..."
 brew cleanup -s
 
+echo "log cleanup..."
+find ${LOG_DIR} -mtime +5 -exec rm -f {} \;
+
 osascript -e 'display notification "completed!" with title "brew upgrade "'
 
 echo "update end."
