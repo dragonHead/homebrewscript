@@ -3,25 +3,26 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+brew "docker"
 brew "git"
 brew "mas"
 brew "openssh"
 brew "openssl"
-brew "docker"
 brew "p7zip"
-brew "vim"
-brew "iterm2"
 cask "android-studio"
 cask "atom"
 cask "docker"
 cask "firefox"
 cask "gimp"
-cask "google-chrome"
+cask "google-chrome-canary"
 cask "google-japanese-ime"
 cask "iterm2"
+cask "tor-browser"
 cask "vagrant"
 cask "virtualbox"
+mas "Kindle", id: 405399194
+mas "LINE", id: 539883307
 mas "1Password", id: 443987910
-max "Kindle", id: 405399194
-mas "Magnet", id: 441258766
+mas "Amphetamine", id: 937984704
 mas "Xcode", id: 497799835
+mas "Magnet", id: 441258766
