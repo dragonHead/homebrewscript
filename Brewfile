@@ -20,7 +20,6 @@ cask "iterm2"
 cask "tor-browser"
 cask "vagrant"
 cask "virtualbox"
-mas "LINE", id: 539883307
 mas "1Password", id: 443987910
 mas "Amphetamine", id: 937984704
 mas "Xcode", id: 497799835
