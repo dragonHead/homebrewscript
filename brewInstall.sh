@@ -36,6 +36,7 @@ if brew doctor > /dev/null; then
 fi
 
 echo "update software..."
+softwareupdate -l
 softwareupdate -i -a
 
 echo "update mas..."

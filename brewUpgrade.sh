@@ -10,6 +10,7 @@ exec > >(tee ${LOG_FILE}) 2>&1
 echo "start update."
 
 echo "update software..."
+softwareupdate -l
 softwareupdate -i -a
 
 echo "update mas..."
