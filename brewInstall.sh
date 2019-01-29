@@ -3,8 +3,8 @@
 #github
 #https://github.com/Homebrew
 
-#memo
-#Install Xcode and Command Line Tools for Xcode before installing
+#before execution
+#Install Xcode
 
 HOME_DIR=$(cd $(dirname $0) && pwd)
 FILE_NAME=$(basename $0 .sh)
@@ -16,14 +16,18 @@ exec > >(tee ${LOG_FILE}) 2>&1
 echo "Create log directory..."
 mkdir -p ${LOG_DIR}
 
+echo "Installing Command Line Tools..."
+xcode-select --install
+
+echo "software update..."
+softwareupdate -l
+softwareupdate -i -a
+
 echo "Installing brew..."
 which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "brew config..."
 brew config
-
-echo "Command Line Tools install..."
-xcode-select --install
 
 echo "brew doctor..."
 if brew doctor > /dev/null; then
