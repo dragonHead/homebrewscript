@@ -54,6 +54,6 @@ echo "brew cleanup..."
 brew cleanup -s
 
 #echo "create Brewfile"
-#brew bundle dump
+brew bundle dump
 
 exit
