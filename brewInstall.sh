@@ -13,14 +13,17 @@ LOG_DIR=${HOME_DIR}/log
 LOG_FILE=${LOG_DIR}/${FILE_NAME}_`date +%Y%m%d%H%M%S`.log
 exec > >(tee ${LOG_FILE}) 2>&1
 
-echo "Create log directory"
+echo "Create log directory..."
 mkdir -p ${LOG_DIR}
 
 echo "Installing brew..."
 which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo "brew config"
+echo "brew config..."
 brew config
+
+echo "Command Line Tools install..."
+xcode-select --install
 
 echo "brew doctor..."
 if brew doctor > /dev/null; then
@@ -34,7 +37,7 @@ mas upgrade
 echo "update brew..."
 brew upgrade
 
-echo "installed mas list"
+echo "installed mas list..."
 mas list
 
 echo "installed brew list..."
