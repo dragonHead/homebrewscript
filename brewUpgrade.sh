@@ -8,6 +8,10 @@ LOG_FILE=${LOG_DIR}/${FILE_NAME}_`date +%Y%m%d%H%M%S`.log
 exec > >(tee ${LOG_FILE}) 2>&1
 
 echo "start update."
+
+echo "update software..."
+softwareupdate -i -a
+
 echo "update mas..."
 mas upgrade
 

@@ -35,6 +35,9 @@ if brew doctor > /dev/null; then
   brew bundle
 fi
 
+echo "update software..."
+softwareupdate -i -a
+
 echo "update mas..."
 mas upgrade
 
@@ -54,6 +57,6 @@ echo "brew cleanup..."
 brew cleanup -s
 
 #echo "create Brewfile"
-brew bundle dump
+#brew bundle dump
 
 exit
