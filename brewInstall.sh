@@ -30,10 +30,10 @@ echo "brew config..."
 brew config
 
 echo "brew doctor..."
-#if brew doctor > /dev/null; then
+if brew doctor > /dev/null; then
   #application install
   brew bundle
-#fi
+fi
 
 echo "update mas..."
 mas upgrade
