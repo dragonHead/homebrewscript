@@ -16,10 +16,15 @@ softwareupdate -i -a
 echo "update mas..."
 mas upgrade
 
+echo "brew -v..."
+brew -v
+
 echo "brew doctor..."
 brew doctor
 
 echo "update brew..."
+brew outdated
+brew update
 brew upgrade
 
 echo "installed mas list..."

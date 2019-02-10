@@ -43,6 +43,7 @@ echo "update mas..."
 mas upgrade
 
 echo "update brew..."
+brew update
 brew upgrade
 
 echo "installed mas list..."
