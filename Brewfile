@@ -18,7 +18,6 @@ cask "gimp"
 cask "google-chrome-canary"
 cask "google-japanese-ime"
 cask "java"
-cask "tor-browser"
 cask "vagrant"
 cask "virtualbox"
 mas "Kindle", id 405399194
