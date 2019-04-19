@@ -20,6 +20,7 @@ cask "iterm2"
 cask "java"
 cask "vagrant"
 cask "virtualbox"
+cask "visual-studio-code"
 mas "Kindle", id 405399194
 mas "LINE", id 539883307
 mas "1Password", id: 443987910
