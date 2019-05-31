@@ -13,18 +13,14 @@ cask "android-studio"
 cask "atom"
 cask "docker"
 cask "firefox"
-cask "firefox-developer-edition"
 cask "google-chrome"
-cask "google-chrome-canary"
 cask "google-japanese-ime"
 cask "iterm2"
 cask "java"
-cask "slack"
 cask "vagrant"
 cask "virtualbox"
 cask "visual-studio-code"
 mas "Kindle", id 405399194
-mas "LINE", id 539883307
 mas "1Password", id: 443987910
 mas "Amphetamine", id: 937984704
 mas "Xcode", id: 497799835
