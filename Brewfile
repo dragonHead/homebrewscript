@@ -20,10 +20,11 @@ cask "google-chrome"
 cask "google-japanese-ime"
 cask "iterm2"
 cask "mysqlworkbench"
+cask "pgadmin4"
 cask "vagrant"
 cask "virtualbox"
 mas "Kindle", id 405399194
-mas "1Password", id: 443987910
 mas "Amphetamine", id: 937984704
+mas "1Password", id: 443987910
 mas "Xcode", id: 497799835
 mas "Magnet", id: 441258766
