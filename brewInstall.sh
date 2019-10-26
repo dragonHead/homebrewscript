@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 #github
 #https://github.com/Homebrew

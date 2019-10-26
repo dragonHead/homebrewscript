@@ -1,4 +1,4 @@
-language: bash
+language: zsh
 matrix:
   include:
     - os: osx
