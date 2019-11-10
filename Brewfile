@@ -17,6 +17,7 @@ cask "google-japanese-ime"
 cask "iterm2"
 cask "vagrant"
 cask "virtualbox"
+cask "visual-studio-code"
 mas "Kindle", id 405399194
 mas "Amphetamine", id: 937984704
 mas "1Password", id: 443987910
