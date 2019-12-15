@@ -23,4 +23,3 @@ mas "Amphetamine", id: 937984704
 mas "1Password", id: 443987910
 mas "Xcode", id: 497799835
 mas "Magnet", id: 441258766
-mas "Twitter", id: 1482454543
