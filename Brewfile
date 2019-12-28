@@ -15,8 +15,6 @@ cask "docker"
 cask "firefox"
 cask "google-chrome"
 cask "google-japanese-ime"
-cask "vagrant"
-cask "virtualbox"
 cask "visual-studio-code"
 mas "Kindle", id 405399194
 mas "Amphetamine", id: 937984704
