@@ -1,9 +1,0 @@
-language: zsh
-matrix:
-  include:
-    - os: osx
-      osx_image: xcode11.3
-before_install:
-  - brew update
-script:
-  - bash brewInstall.sh
