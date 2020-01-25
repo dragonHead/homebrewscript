@@ -1,7 +1,4 @@
-# README #
-
-
-[![Build Status](https://travis-ci.org/dragonHead/macbrewinstallscript.svg?branch=master)](https://travis-ci.org/dragonHead/macbrewinstallscript)
+# mac brew install script #
 
 ### brewUpgrade.sh&nbsp;&nbsp;launchctl&nbsp;&nbsp;setting
 
