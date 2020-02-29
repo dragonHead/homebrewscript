@@ -1,7 +1,4 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
-brew "docker"
-brew "docker-compose"
-brew "openssh"
 brew "tmux"
 brew "vim"
