@@ -4,7 +4,8 @@
 #https://docs.brew.sh/Homebrew-on-Linux
 
 #before execution
-#sudo apt-get install build-essential curl file git
+#pass=
+#echo $pass | sudo apt-get install build-essential curl file git
 
 HOME_DIR=$(cd $(dirname $0) && pwd)
 FILE_NAME=$(basename $0 .sh)
@@ -17,12 +18,13 @@ echo "Create log directory..."
 mkdir -p ${LOG_DIR}
 
 echo "Installing brew..."
-which brew >/dev/null 2>&1 \
-|| sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)" \
-&& test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv) \
-&& test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv) \
-&& test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile \
-&& echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+which brew >/dev/null 2>&1 || sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+source ~/.bash_profile
+source ~/.profile
 
 echo "brew config..."
 brew config
@@ -47,4 +49,3 @@ brew cleanup -s
 #brew bundle dump
 
 exit
-
