@@ -9,11 +9,11 @@
       <key>PATH</key>
       <string>/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:</string>
     </dict>
-    <!--フルパスで指定-->
     <key>ProgramArguments</key>
     <array>
       <string>/bin/zsh</string>
-      <string>brewUpgrade.sh</string>
+        <!--フルパスで指定-->
+      <string>/Users/***userName***/bin/brewUpgrade.sh</string>
     </array>
     <key>StartCalendarInterval</key>
     <dict>
@@ -26,7 +26,9 @@
     <true/>
     <key>ExitTimeout</key>
     <integer>300</integer>
-    <key>UserName</key>
-    <string></string>
+    <!-- <key>StandardOutPath</key>
+    <string>/tmp/turtle.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/turtle.err</string> -->
   </dict>
 </plist>
