@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 HOME_DIR=$(cd $(dirname $0) && pwd)
 FILE_NAME=$(basename $0 .sh)

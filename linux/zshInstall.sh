@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 HOME_DIR=$(cd $(dirname $0) && pwd)
 FILE_NAME=$(basename $0 .sh)
@@ -10,6 +10,9 @@ exec > >(tee ${LOG_FILE}) 2>&1
 echo "Create log directory..."
 mkdir -p ${LOG_DIR}
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+PASS=
+echo $PASS | sudo apt-get install -y zsh
+chsh -s $(which zsh)
 
+reboot
 exit;

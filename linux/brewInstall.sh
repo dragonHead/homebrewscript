@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 #linuxbrew
 #https://docs.brew.sh/Homebrew-on-Linux
