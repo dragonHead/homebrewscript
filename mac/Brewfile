@@ -17,7 +17,10 @@ cask "docker"
 cask "firefox"
 cask "google-chrome"
 cask "google-japanese-ime"
+cask "malwarebytes"
 cask "microsoft-edge"
+cask "skype"
+cask "slack"
 cask "vagrant"
 cask "visual-studio-code"
 cask "virtualbox"
@@ -26,3 +29,5 @@ mas "Amphetamine", id: 937984704
 mas "1Password", id: 443987910
 mas "Xcode", id: 497799835
 mas "Magnet", id: 441258766
+mas "Firewall", id: 1477597795
+mas "Playgrounds", id: 1496833156
