@@ -50,10 +50,10 @@ echo "installed mas list..."
 mas list
 
 echo "installed brew list..."
-brew ls
+brew list --formula
 
 echo "installed brew cask list..."
-brew cask ls
+brew  list --cask
 
 echo "brew cleanup..."
 brew cleanup -s
