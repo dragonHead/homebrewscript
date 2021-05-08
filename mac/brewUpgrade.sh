@@ -16,9 +16,6 @@ echo "update software..."
 softwareupdate -l
 softwareupdate -i -a
 
-echo "update mas..."
-mas upgrade
-
 echo "brew -v..."
 brew -v
 
@@ -29,9 +26,6 @@ echo "update brew..."
 brew outdated
 brew update
 brew upgrade
-
-echo "installed mas list..."
-mas list
 
 echo "installed brew list..."
 brew list --formula
