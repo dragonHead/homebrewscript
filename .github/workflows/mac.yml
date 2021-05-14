@@ -9,10 +9,10 @@ jobs:
   install:
     runs-on: macos-latest
     steps:
-      - name: Select Xcode version
-        run: sudo xcode-select -s '/Applications/Xcode_12.4.app/Contents/Developer'
-      - name: Update Homebrew
-        run: brew upgrade
+      # - name: Select Xcode version
+      #   run: sudo xcode-select -s '/Applications/Xcode_12.4.app/Contents/Developer'
+      # - name: Update Homebrew
+      #   run: brew upgrade
       - name: Cleanup Homebrew
         run: brew cleanup --prune=all
       - name: Cleanup file

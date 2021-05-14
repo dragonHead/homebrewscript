@@ -27,12 +27,11 @@ echo "Installing brew..."
 #which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "brew config..."
-#brew config
+brew config
 
 echo "brew doctor..."
 if brew doctor > /dev/null; then
-  #application install
-  brew bundle
+  brew bundle --file=./mac/Brewfile
 fi
 
 echo "update software..."
