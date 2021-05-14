@@ -34,7 +34,7 @@ echo "installed brew list cask..."
 brew list --cask
 
 echo "brew cleanup..."
-brew cleanup -s
+brew cleanup --prune=all
 
 echo "log cleanup..."
 find ${LOG_DIR} -mtime +5 -exec rm -f {} \;

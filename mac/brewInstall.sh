@@ -50,7 +50,7 @@ echo "installed brew cask list..."
 brew  list --cask
 
 echo "brew cleanup..."
-brew cleanup -s
+brew cleanup --prune=all
 
 #echo "create Brewfile"
 #brew bundle dump
