@@ -1,0 +1,14 @@
+name: Application install on HomeBrew
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  install:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install
+      - run: PATH/mac/brewInstall.sh
