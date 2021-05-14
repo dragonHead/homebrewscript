@@ -11,8 +11,11 @@ jobs:
     steps:
       - name: Select Xcode version
         run: sudo xcode-select -s '/Applications/Xcode_12.4.app/Contents/Developer'
-      - name : Update Homebrew
-        run: brew upgrade && brew cleanup --prune=all
+      - name: Update Homebrew
+        run: brew upgrade
+      - name: Cleanup Homebrew
+        run: brew cleanup --prune=all
+        run: sudo rm -f /usr/local/lib/libtcl8.6.dylib /usr/local/lib/libtk8.6.dylib /usr/local/lib/pkgconfig/tcl.pc /usr/local/lib/pkgconfig/tk.pc /usr/local/lib/libtclstub8.6.a /usr/local/lib/libtkstub8.6.a
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Application
