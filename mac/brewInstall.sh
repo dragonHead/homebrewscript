@@ -17,17 +17,17 @@ echo "Create log directory..."
 mkdir -p ${LOG_DIR}
 
 echo "Installing Command Line Tools..."
-xcode-select --install
+#xcode-select --install
 
 echo "software update..."
-softwareupdate -l
-softwareupdate -i -a
+#softwareupdate -l
+#softwareupdate -i -a
 
 echo "Installing brew..."
-which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "brew config..."
-brew config
+#brew config
 
 echo "brew doctor..."
 if brew doctor > /dev/null; then
@@ -36,21 +36,21 @@ if brew doctor > /dev/null; then
 fi
 
 echo "update software..."
-softwareupdate -l
-softwareupdate -i -a
+#softwareupdate -l
+#softwareupdate -i -a
 
 echo "update brew..."
-brew update
-brew upgrade
+#brew update
+#brew upgrade
 
 echo "installed brew list..."
-brew list --formula
+#brew list --formula
 
 echo "installed brew cask list..."
-brew  list --cask
+#brew  list --cask
 
 echo "brew cleanup..."
-brew cleanup --prune=all
+#brew cleanup --prune=all
 
 #echo "create Brewfile"
 #brew bundle dump
