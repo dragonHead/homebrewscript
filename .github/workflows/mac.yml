@@ -15,6 +15,7 @@ jobs:
         run: brew upgrade
       - name: Cleanup Homebrew
         run: brew cleanup --prune=all
+      - name: Cleanup file
         run: sudo rm -f /usr/local/lib/libtcl8.6.dylib /usr/local/lib/libtk8.6.dylib /usr/local/lib/pkgconfig/tcl.pc /usr/local/lib/pkgconfig/tk.pc /usr/local/lib/libtclstub8.6.a /usr/local/lib/libtkstub8.6.a
       - name: Checkout
         uses: actions/checkout@v2
