@@ -38,6 +38,9 @@ echo "update software..."
 softwareupdate -l
 softwareupdate -i -a
 
+echo "update mas..."
+mas upgrade
+
 echo "update brew..."
 brew update
 brew upgrade
