@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  install:
+  install-mac:
     runs-on: macos-latest
     steps:
       - name: Select Xcode version
@@ -21,3 +21,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Install Application
         run: ./mac/brewInstall.sh
+
+  install-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2

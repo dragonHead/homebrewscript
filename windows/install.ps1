@@ -1,2 +1,13 @@
 winget source update
 winget install Google.AndroidStudio
+winget install 7zip.7zip
+winget install DBeaver
+winget install Docker.DockerDesktop
+winget install Google.Chrome
+winget install Mozilla.Firefox
+winget install Mozilla.Thunderbird
+winget install WinMerge.WinMerge
+winget install SlackTechnologies.Slack
+winget install WinSCP.WinSCP
+winget install Microsoft.PowerShell
+winget install Microsoft.VisualStudioCode
